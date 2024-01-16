@@ -50,6 +50,6 @@ RSpec.describe Ride do
         expect(biker.rides.keys).to eq([ride1, ride2])
         expect(biker.personal_record(ride1)).to eq(91.1)
         expect(biker.personal_record(ride2)).to eq(60.9)
+        expect(biker1.personal_record(ride1)).to eq(false)
     end
-
 end
